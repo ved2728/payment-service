@@ -14,7 +14,7 @@ node{
     }
     stage('code quality analysis')
     {
-        withSonarQubeEnv('ved2000')
+        withSonarQubeEnv('mysonar')
         {
             sh 'mvn sonar:sonar -Dsonar.organization=vedant1 -Dsonar.projectKey=payment1'
         }
