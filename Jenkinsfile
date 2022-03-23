@@ -14,9 +14,9 @@ node{
     }
     stage('code quality analysis')
     {
-        withSonarQubeEnv('mysonar')
+        withSonarQubeEnv('mysonar1')
         {
-            sh 'mvn sonar:sonar -Dsonar.organization=vedant2000 -Dsonar.projectKey=vedpayment'
+            sh 'mvn sonar:sonar -Dsonar.organization=mysonar1 -Dsonar.projectKey=payment2'
         }
     }
     stage("Quality Gate"){
