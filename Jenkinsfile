@@ -16,7 +16,7 @@ node{
     {
         withSonarQubeEnv('mysonar')
         {
-            sh 'mvn sonar:sonar -Dsonar.organization=vedant1 -Dsonar.projectKey=payment1'
+            sh 'mvn sonar:sonar -Dsonar.organization=vedant2000 -Dsonar.projectKey=vedpayment'
         }
     }
     stage("Quality Gate"){
